@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <h1> Flask App</h1>
+    <h1> Web Scraping</h1>
     <hr>
     <p> Data extraction of data from booking.com and collection to mysql database. </p>
     <h2> Python Files </h2>
