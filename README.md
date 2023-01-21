@@ -9,13 +9,14 @@
     <p> Data extraction of data from booking.com and collection to mysql database. </p>
     <h2> Python Files </h2>
   <ul>
-      <li> bot.py </li>
-      <li> LoadData.py </li>
-      <li> scraping.py</li>
-      <li > test_scraping.py</li>
+      <li>bot.py</li>
+      <li>LoadData.py</li>
+      <li>scraping.py</li>
+      <li>test_scraping.py</li>
+      <li> 
   </ul>
 <div>
- <p> It needs to be updated!</p>
+ <p> It needs to be updated, Scraping.py no longer working!</p>
 </div>
 
 </body>
