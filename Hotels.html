@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="content">
+      <table id="hotels">
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Rating</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script>
+    fetch("mydata.xml")
+      .then((response) => response.text())
+      .then((xml) => {
+        const xmlString = xml;
+
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(xmlString, "text/xml");
+        console.log(xmlDoc);
+        const books = Array.from(xmlDoc.getElementsByTagName("Hotel"));
+        books.forEach((e) => {
+          const hotel = e.getElementsByTagName("Name")[0].textContent;
+
+          const address = e.getElementsByTagName("Address")[0].textContent;4
+
+          const rating = e.getElementsByTagName("Rating")[0].textContent;
+
+          const tr = document.createElement("tr");
+          tr.innerHTML = `<td>
+            ${hotel}
+            </td>
+            <td>
+            ${address}
+            </td>
+            <td>
+            ${rating}
+            </td>
+            `;
+          const table = document.getElementById("hotels");
+          const br = document.createElement('br')
+          table.appendChild(tr);
+          table.appendChild(br)
+        });
+      });
+  </script>
+</html>
