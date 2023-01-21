@@ -13,7 +13,8 @@
       <li>LoadData.py</li>
       <li>scraping.py</li>
       <li>test_scraping.py</li>
-      <li> 
+      <li>mydata.xml</li>
+      <li>Hotels.html</li> 
   </ul>
 <div>
  <p> It needs to be updated, Scraping.py no longer working!</p>
